@@ -127,22 +127,40 @@
       <div class="container">
         <div class="project-wrapper">
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">X-Plane</h3>
                 <div>
-                  <p class="mb-4">
-                    <!--Description of Role onn the team-->
-                    The UCD UAV team was created in order to compete in the iMecheE UAS Challenge. The goal was to develop a 
-                    fully autonomous humanitarian aid drone capable of precise mission planning, payload delivery and 
-                    safe recovery while complying with the competition regulations. 
+                  <p class="mb-4" style="text-align: justify;">
+                    <!--Description of Xplane-->
+                    I developed a fully functional flight simulation model of our UAV using X-Plane 11 and Plane Maker. 
+                    This allowed us to validate our design decisions, calculations and flight performance. 
+                    <br/>
+                    <br>
+                    <strong>Key contributions achieved:</strong>
+                    <br>
+                    Built several custom UAV prototypes in Plane Maker: I did this by replicating the geometry of the plane 
+                    based off CAD models, creating and sizing control surfaces, inputting propulsion system characteristics, 
+                    and mass properties based off calculations.<br>
+                    <br>
+                    Dynamics Validation: X-Plane was used to validate the plane's flying performance to verify 
+                    if the aerodynamic coefficients and control surfaces along with their deflections ensured that the UAV 
+                    was operable. I was able to modify the environmental settings by changing cross-wind on takeoff etc, to see 
+                    how the UAV would react. From these tests, we found out that the UAV was able to produce a lot of lift on 
+                    takeoff, therefore requiring a short takeoff distance, but it was also slightly statically unstable in roll, 
+                    meaning that the UAV failed to correct and return to level flight after being slightly distrubed in roll.<br>
+                    <br>
+                    I used X-Plane to simulate the effects of dropping our 2kg payload. I was able to conclude that while the UAV 
+                    became more maneuverable, there weren't any sudden effects as the centre of gravity (COG) of the payload was roughly 
+                    directly below the COG of the whole UAV, therefore the longitudinal location of the COG did not change when the 
+                    payload was dropped. The payload drop itself was modelled by a jettison water drop in X-Plane.<br>
                   </p>
                 </div>
               </div>
             </div>
-            <!--Image-->
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
+            <!--Image/video-->
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__image load-hidden" style="margin-top: 120px;">
                 <a rel="noreferrer" href="#!" target="_blank">
                   <div
                     data-tilt
@@ -151,11 +169,9 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
+                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                      <source src="assets/ucduav_assets/xplanedemo.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </a>
               </div>
