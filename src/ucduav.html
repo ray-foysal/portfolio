@@ -130,15 +130,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END Roles Section -->
+          <!-- /END Roles Section -->
 
-    <!-- X-Plane Section -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
+          <!-- X-Plane Section -->
           <div class="row">
             <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
@@ -174,7 +168,7 @@
             <!--Image/video-->
             <div class="col-lg-7 col-sm-12">
               <div class="project-wrapper__image load-hidden" style="margin-top: 120px;">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="assets/ucduav_assets/xplanehandbook.pdf" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -190,33 +184,52 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END Accomplishments/failures Section -->
+          <!-- /END Xplane Section -->
 
-    <!-- Result -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
+          <!-- FEA -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">My Role on the Team</h3>
+                <h3 class="project-wrapper__text-title">FEA</h3>
                 <div>
-                  <p class="mb-4">
-                    <!--Description of Role onn the team-->
-                    The UCD UAV team was created in order to compete in the iMecheE UAS Challenge. The goal was to develop a 
-                    fully autonomous humanitarian aid drone capable of precise mission planning, payload delivery and 
-                    safe recovery while complying with the competition regulations. 
+                  <p class="mb-4" style="text-align: justify;">
+                    <!--Description of FEA tests-->
+                    As part of the landing gear selection for our UAV, I conducted Finite Element Analysis (FEA) 
+                    simulations using SimScale to test how the landing gear we chose would respond under harsh landing 
+                    conditions. I also trialed two different carbon fibre settings; a generic carbon fibre vs 3k twill 
+                    carbon fibre which was the type used in our landing gear.<br>
+                    <br>
+                    The main objective was to find out if our landing gear could endure multiple impacts during real-world 
+                    operation without failure with a factor of safety. I simulated a variety of landing scenarios, including 
+                    ideal landings and impacts at angles, at different descent velocities.<br>
+                    <br>
+                    <strong>Key Simulation Scenarios and Results:</strong>
+                    <br>
+                    Vertical landings at -1 m/s, -3 m/s, and -4 m/s showed that the 3K twill carbon fibre consistently stayed 
+                    below its tensile failure limit (Max Von Mises ≈ 2.65 GPa < Material Max 3.45 GPa), while regular carbon 
+                    fibre remained within its lower strength limit (≈ 400 MPa < 650 MPa).<br>
+                    <br>
+                    In angled landings, such as a 10° backward tilt and 5° sideways tilt at -3 m/s, the results showed that 
+                    the regular carbon fibre was approaching its stress limit (≈ 618 MPa and 1.4 GPa), whereas the 3K twill 
+                    variant showed greater resilience.<br>
+                    <br>
+                    These simulations showed that 3k twill carbon fibre had a higher tolerance to stress concentrations 
+                    during impact, and that the landing gear that was tested would be suitable for our UAV.<br>
+                    <br>
+                    In order to ensure accurate results, I used a dynamic simulatin setup instead of the static tests that 
+                    could be performed in CAD such as Fusion 360. The dynamic simulations offered realistic impact velocities, 
+                    mesh refinement, and physical contact restraints between the ground and the landing gear wheels.<br>
+                    <br>
+                    I also implemented result control probes in SimScale to measure the max von Mises stress in regions that 
+                    were predicted to be under the most load and stress during the impact.
                   </p>
                 </div>
               </div>
             </div>
-            <!--Image-->
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+            <!-- Combined Image and Video Column -->
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__image load-hidden" style="margin-bottom: 4rem;">
+                <a rel="noreferrer" href="assets/ucduav_assets/Dynamic Test Procedure.docx.pdf" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -225,19 +238,71 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
+                      alt="FEA Image"
+                      class="img-fluid rounded shadow-lg"
+                      src="assets/ucduav_assets/fea.png"
                     />
+                  </div>
+                </a>
+              </div>
+
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="assets/ucduav_assets/feacfresults.pdf" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                      <source src="assets/ucduav_assets/feavid.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </a>
               </div>
             </div>
           </div>
+          <!-- End FEA Section-->
+
+          <!-- GCS Section -->
+          <div class="row">
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">X-Plane</h3>
+                <div>
+                  <p class="mb-4" style="text-align: justify;">
+                    <!--Description of GCS-->
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Image/video-->
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__image load-hidden" style="margin-top: 120px;">
+                <a rel="noreferrer" href="assets/ucduav_assets/xplanehandbook.pdf" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                      <source src="assets/ucduav_assets/xplanedemo.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Xplane Section --> 
+
         </div>
       </div>
     </section>
-    <!-- End Result Section-->
+    
      
     <script defer type="module" src="index.js"></script>
   </body>
