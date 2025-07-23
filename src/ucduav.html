@@ -90,7 +90,7 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">My Role on the Team</h3>
                 <div>
-                  <p class="mb-4">
+                  <p class="mb-4" style="text-align: justify;">
                     <!--Description of Role onn the team-->
                     During my time on the UCD UAV team, I contributed across both the Aeromechanical and 
                     Avionics branches, often acting as a bridge to ensure smooth communication and collaboration 
@@ -110,23 +110,21 @@
                 </div>
               </div>
             </div>
+            <!--video-->
             <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/ucduav_assets/teampic.jpg"
-                    />
-                  </div>
-                </a>
+              <div
+                data-tilt
+                data-tilt-max="4"
+                data-tilt-glare="true"
+                data-tilt-max-glare="0.5"
+                class="thumbnail rounded js-tilt"
+              >
+                <video 
+                class="img-fluid rounded shadow-lg" 
+                width="100%" autoplay muted loop playsinline 
+                style="margin-top: 60px; margin-left: 30px;">
+                  <source src="assets/ucduav_assets/labwork.mp4" type="video/mp4">
+                </video>
               </div>
             </div>
           </div>
@@ -165,7 +163,7 @@
                 </div>
               </div>
             </div>
-            <!--Image/video-->
+            <!--image-->
             <div class="col-lg-7 col-sm-12">
               <div class="project-wrapper__image load-hidden" style="margin-top: 120px;">
                 <a rel="noreferrer" href="assets/ucduav_assets/xplanehandbook.pdf" target="_blank">
@@ -176,6 +174,7 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
+                  <!--video-->
                     <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
                       <source src="assets/ucduav_assets/xplanedemo.mp4" type="video/mp4">
                     </video>
@@ -269,19 +268,34 @@
           <div class="row">
             <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">X-Plane</h3>
+                <h3 class="project-wrapper__text-title">GCS/Transport Box</h3>
                 <div>
                   <p class="mb-4" style="text-align: justify;">
-                    <!--Description of GCS-->
-                    
+                    <!--Description of GCS/Trasnport Box-->
+                    The transport box, which also serves as the Ground Control Station (GCS), is a custom built 
+                    wooden structure designed to house the disassembled UAV, along with spare parts, repair tools, 
+                    batteries, and pre-flight checklists. It was engineered to fold up compactly and comply with the 
+                    strict maximum outer dimensions of 1.5 x 0.6 x 0.6 metres, as required by the UAS Challenge Competition.<br>
+                    <br>
+                    For ease of transport, the box features two handles on either end, enabling it to be carried by two people. 
+                    Alternatively, it can be pulled by a single person using two wheels mounted on the opposite side. <br>
+                    <br>
+                    One of the walls unfolds to form a pop-out desk, providing a stable workspace for laptops, tablets, 
+                    and telemetry equipment used to monitor the UAV's flight systems and execute checklists. A pull-out drawer 
+                    has also been integrated into the base of the box, allowing for organized storage of tools, components, 
+                    and other small essentials. <br>
+                    <br>
+                    The GCS is a crucial part of the UAV system that was designed not just for transport and protection, but also to 
+                    serve as a mobile operations hub during our missions.
                   </p>
                 </div>
               </div>
             </div>
             <!--Image/video-->
-            <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden" style="margin-top: 120px;">
-                <a rel="noreferrer" href="assets/ucduav_assets/xplanehandbook.pdf" target="_blank">
+            <div class="col-lg-6 col-sm-12">
+              <!-- Top image -->
+              <div class="project-wrapper__image load-hidden mb-4">
+                <a rel="noreferrer" href="#!" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -289,21 +303,146 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-                      <source src="assets/ucduav_assets/xplanedemo.mp4" type="video/mp4">
-                    </video>
+                    <img
+                      alt="GCS Render"
+                      class="img-fluid"
+                      src="assets/ucduav_assets/gcs2.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <!-- Bottom image -->
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="GCS Built"
+                      class="img-fluid"
+                      src="assets/ucduav_assets/gcs3.jpg"
+                    />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Xplane Section --> 
+          <!-- /END GCS Section --> 
 
         </div>
       </div>
     </section>
-    
-     
+
+    <!-- **** Gallery Section **** -->
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="row">
+          <!-- Image 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery1.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1" />
+          </div>
+          <!-- Image 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery2.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2" />
+          </div>
+          <!-- Image 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery3.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
+          </div>
+          <!-- Image 4 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery4.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1" />
+          </div>
+          <!-- Video 5 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+              <source src="assets/ucduav_assets/gallery5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Image 6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery6.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
+          </div>
+          <!-- Image 7 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery7.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1" />
+          </div>
+          <!-- Image 8 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery8.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2" />
+          </div>
+          <!-- Video 9 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+              <source src="assets/ucduav_assets/gallery9.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Video 10 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+              <source src="assets/ucduav_assets/gallery10.mp4" type="video/mp4">
+            </video>
+          </div>
+          <!-- Image 11 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery11.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
+          </div>
+          <!-- Image 12 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery12.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
+          </div>
+          <!-- Image 13 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/ucduav_assets/gallery13.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">
+            rayfoysal@gmail.com
+            <br>
+            +353 85 103 1313 (IE)
+            <br>
+            +61 432 743 233 (AUS)
+          </p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:example@email.com"
+            >Email</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <br>
+        <a rel="noreferrer" href="#!" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
     <script defer type="module" src="index.js"></script>
   </body>
 </html>
