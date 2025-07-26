@@ -45,7 +45,7 @@
         <h2 class="section-title load-hidden">About the Project</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
+            <div class="about-wrapper__image load-hidden" style="margin: 30px;">
               <!--Video of Blender Animation-->
               <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
                 <source src="assets/robochess_assets/blender.mp4" type="video/mp4">
@@ -53,7 +53,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
+            <div class="about-wrapper__info load-hidden" style="text-align: justify;">
               <p class="about-wrapper__info-text">
                 <!-- Description of the project -->
                 The RoboChess project began as an initiative by my classmate Joe Biju, supported by the UCD Electrical 
@@ -85,7 +85,7 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Design</h3>
                 <div>
-                  <p class="mb-4">
+                  <p class="mb-4" style="text-align: justify;">
                     <!--Description of the Design-->
                     To enable physical movement of chess pieces on the board, I designed a custom robotic arm based 
                     on a dual-SCARA configuration. The SCARA (Selective Compliance Assembly Robot Arm) mechanism was 
@@ -138,7 +138,7 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Learning Outcomes</h3>
                 <div>
-                  <p class="mb-4">
+                  <p class="mb-4" style="text-align: justify;">
                     <!--What I learned-->
                     Working on the RoboChess project was a rewarding experience that pushed me to grow both 
                     technically and creatively.
@@ -183,11 +183,9 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/robochess_assets/system.jpg"
-                    />
+                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                      <source src="assets/robochess_assets/3dprinting.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </a>
               </div>
@@ -207,7 +205,7 @@
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Challenges I faced</h3>
                 <div>
-                  <p class="mb-4">
+                  <p class="mb-4" style="text-align: justify;">
                     <!--Description of problems faced during the porject-->
                    As with any hands on engineering project, the journey of building the RoboChess arm came 
                    with its fair share of obstacles. These challenges not only tested my problem solving skills 
@@ -262,6 +260,46 @@
       </div>
     </section>
     <!-- End Result Section-->
+
+    <!-- **** Gallery Section **** -->
+    <section id="gallery">
+      <div class="container">
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="row">
+          <!-- Image 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/robochess_assets/system.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1" />
+          </div>
+          <!-- Image 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                <source src="assets/robochess_assets/blender.mp4" type="video/mp4">
+            </video>
+          </div>
+            <!-- Image 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/robochess_assets/cad.png" class="img-fluid rounded shadow" alt="Gallery Image 3" />
+          </div>
+          
+          <!-- Image 4 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/robochess_assets/assembly.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4" />
+          </div>
+          <!-- Image 5 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                <source src="assets/robochess_assets/testing.mp4" type="video/mp4">
+            </video>
+          </div>   
+          <!-- Video 6 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+              <source src="assets/robochess_assets/vert_test.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- **** Contact Section **** -->
     <section id="contact">
