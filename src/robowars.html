@@ -43,7 +43,7 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About the Team</h2>
+        <h2 class="section-title load-hidden">About the Project</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
@@ -61,13 +61,11 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                The UCD UAV team was founded early in 2024 and recruiting had just begun. I joined the team in February of 2024 
-                under the aeromechanical team. The team consists of 10 students ranging in mechanical and electrical/electronic 
-                engineering, and our academic advisor Kevin Nolan. There are three branches in the team; aeromechanical, avionics, 
-                and business/social media.
-              </p>
-              <p class="about-wrapper__info-text">
-                My role on the team spanned from simulations to aeromechanical and manufacturing. 
+                The RoboWars project was created for the RoboWars Fight Night 2025 held at Dogpatch Labs in Dublin. 
+                The competition required teams to build and battle custom designed robots in an arena. Our robot was 
+                designed to be a flipper bot. It focused on aggression and speed to launch opponents out of the arena 
+                and deal heavy blows, while also being very resilient with a heavy armour made from sheets of titanium 
+                and aluminium. 
               </p>
             </div>
           </div>
@@ -80,20 +78,31 @@
       <div class="container">
         <div class="project-wrapper">
 
-          <!-- Tasks and Roles -->
+          <!-- DESIGN SECTION -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">My Role on the Team</h3>
+                <h3 class="project-wrapper__text-title">Design & Mechanism</h3>
                 <div>
                   <p class="mb-4">
-                    <!--Description of Role onn the team-->
-                    Throughout my time at the UCD UAV team, I have worked closely with both the aeromechanical and avionics 
-                    departments, ensuring clear communication happens between the two. In the beginning, I focused on simulations,
-                    particularly modelling our UAV in the software known as X-Plane 11. Later on I worked on integrating X-Plane to 
-                    mission planner in Ardupilot. I then worked on Finite Element Analysis (FEA) specifically for the landing gears 
-                    of the UAV. Finally, I developed and built the ground control station (GCS) which acted as the storage unit for 
-                    the UAV and also served as an operating station while preparing to fly, and during flight.  
+                    <!--Description of Design-->
+                    Our bot featured a pneumatic flipper system powered by a CO₂ canister and a solenoid valve, 
+                    actuating a heavy duty 32mm bore piston that could deliver rapid and forceful flips. The chassis 
+                    was made from 3d printed PLA Metal and PETG, and reinforced with aluminium for a very strong yet 
+                    lightweight frame, and the armor used titanium and aluminium for protection. Key design elements:
+                    <br><br>
+                    <strong>Drive system:</strong>
+                    2WD powered by brushed drill motors that featured a two stage planetary gearbox. 
+                    <br><br>
+                    <strong>Armour:</strong>
+                    angled plates of armour to deflect hits
+                    <br><br>
+                    <strong>Weapon:</strong>
+                    front-mounted flipper with reinforced hinge points and titanium protection.
+                    <br><br>
+                    <strong>Mobility:</strong>
+                    low ground clearance for stability, control, low centre of gravity and protection against other 
+                    bots striking from underneath.
                   </p>
                 </div>
               </div>
@@ -118,25 +127,40 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END Roles Section -->
+          <!-- /END Roles Section -->
 
-    <!-- X-Plane Section -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
+          <!-- CHALLENGES Section -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">X-Plane</h3>
+                <h3 class="project-wrapper__text-title">Challenges Faced</h3>
                 <div>
                   <p class="mb-4">
-                    <!--Description of Role onn the team-->
-                    The UCD UAV team was created in order to compete in the iMecheE UAS Challenge. The goal was to develop a 
-                    fully autonomous humanitarian aid drone capable of precise mission planning, payload delivery and 
-                    safe recovery while complying with the competition regulations. 
+                    <!--Description of challenges faced-->
+                    We encountered several engineering hurdles:
+                    <br><br>
+                    <strong>Material stress:</strong>
+                    Components near the piston would deform under repeated impacts, requiring reinforcement. A lot of 
+                    3d printed parts also fractured under huge amounts of shock and stress, therefore they had to be 
+                    redesigned in a way that they could distribute those stresses away. 
+                    <br><br>
+                    <strong>Weight distribution & Forces:</strong>
+                    The force kickback from actuating the piston caused our whole bot to rock backwards. To counter this 
+                    force, we had to shift components around to achieve a centre of gravity further forward. We also added 
+                    small castor wheels underneath the bot to provide stability when actuating the piston and to allow the 
+                    bot to balance on only 2 main wheels.
+                    <br><br>
+                    <strong>Regulations:</strong>
+                    Meeting the strict safety constraints of RoboWars while packing in high pressure pneumatics was difficult. 
+                    We also had a weight limit of 7kg that we quickly reached and had to optimise our bot for. 
+                    <br><br>
+                    <strong>Battery Management</strong>
+                    On the day of the competition, we had a huge issues with our batteries. After plugging in our battery pack 
+                    of 4S2P Li-ions, we faced current surges that fried components on board. This issue was luckily resolved by 
+                    replacing the batteries with those of a different brand. Another issue with our batteries was that when the 
+                    bot took a hit, the batteries would shift and become disconnected, which disabled our whole bot. We fixed 
+                    this by adding in small nuts to tension the batteries in their holders so that they would be very hard to 
+                    dislodge. 
                   </p>
                 </div>
               </div>
@@ -162,25 +186,27 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END Accomplishments/failures Section -->
+          <!-- /END CHALLENGES Section -->
 
-    <!-- Result -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
+          <!-- LEARNING OUTCOME SECTION -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">My Role on the Team</h3>
+                <h3 class="project-wrapper__text-title">Learning Outcomes</h3>
                 <div>
                   <p class="mb-4">
-                    <!--Description of Role onn the team-->
-                    The UCD UAV team was created in order to compete in the iMecheE UAS Challenge. The goal was to develop a 
-                    fully autonomous humanitarian aid drone capable of precise mission planning, payload delivery and 
-                    safe recovery while complying with the competition regulations. 
+                    <!--Description-->
+                    Learning Outcomes:
+                    <br><br>
+                    Gained hands on experience with pneumatic systems and their control.
+                    <br>
+                    Learned to iterate mechanical designs quickly under tight deadlines.
+                    <br>
+                    Improved skills in team based design, CAD integration, and manufacturing using power tools especially 
+                    with aluminium and titanium.
+                    <br>
+                    Learned how to think creatively under extreme pressure, optimising within rules while still 
+                    meeting tight deadlines. 
                   </p>
                 </div>
               </div>
@@ -228,10 +254,13 @@
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <img src="assets/robowars_assets/me.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
           </div>
-          <!-- Image 4 -->
+          <!-- Video 8 -->
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/robowars_assets/nakedbot.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4" />
+            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+              <source src="assets/robowars_assets/drag.mp4" type="video/mp4">
+            </video>
           </div>
+          
            <!-- Image 5 -->
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <img src="assets/robowars_assets/onthearena.jpg" class="img-fluid rounded shadow" alt="Gallery Image 5" />
@@ -252,16 +281,15 @@
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <img src="assets/robowars_assets/workshop.jpg" class="img-fluid rounded shadow" alt="Gallery Image 9" />
           </div>
+          <!-- Image 4 -->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <img src="assets/robowars_assets/nakedbot.jpg" class="img-fluid rounded shadow" alt="Gallery Image 4" />
+          </div>
           <!-- Image 7 -->
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <img src="assets/robowars_assets/den.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1" />
           </div>
-          <!-- Video 8 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-              <source src="assets/robowars_assets/drag.mp4" type="video/mp4">
-            </video>
-          </div>
+          
           <!-- Video 9 -->
           <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
             <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
