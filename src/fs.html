@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     
-    <title>UCD UAV Project | Ray Foysal</title>
+    <title>Formula Students | Ray Foysal</title>
 
     <link
       rel="stylesheet"
@@ -26,9 +26,10 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          <span class="text-color-main">UCD UAV Project</span>
+          <span class="text-color-main">Formula Students</span>
           <br />
-          Student led team in University College Dublin competing in the iMechE UAS Challenge 2025.
+          Student led team in University College Dublin competing in the international iMechE Formula Students competition 
+          held in Silverstone, UK.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -51,7 +52,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="500px"
-                src="assets/ucduav_assets/teampic.jpg"
+                src="assets/fs_assets/team.jpg"
                 alt="Profile Image"
               />
             </div>
@@ -60,13 +61,22 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                The UCD UAV team was founded early in 2024 and recruiting had just begun. I joined the team in February of 2024 
-                under the aeromechanical team. The team consists of 10 students ranging in mechanical and electrical/electronic 
-                engineering, and our academic advisor Kevin Nolan. There are three branches in the team; aeromechanical, avionics, 
-                and business/social media.
+                The Formula Student project is UCD's motorsport engineering team. We are tasked with designing, 
+                building, and racing a fully electric single seat car for the IMechE Formula Student UK competition 
+                held at Silverstone. The project is fully student led and brings engineering students from all years 
+                and disciplines to tackle this project.
               </p>
               <p class="about-wrapper__info-text">
-                My role on the team spanned from simulations to aeromechanical and manufacturing. 
+                The team is structured into three main departments:
+                <br><br>
+                <strong>Powertrain:</strong> 
+                focused on the high voltage system and battery, motor, and control electronics  
+                <br><br>
+                <strong>Mechanical:</strong>
+                responsible for the chassis, suspension, aerodynamics, and ergonomics
+                <br><br>
+                <strong>Operations:</strong> 
+                manages finance, outreaches to potential sponsors, documentation, and team logistics
               </p>
             </div>
           </div>
@@ -87,12 +97,32 @@
                 <div>
                   <p class="mb-4">
                     <!--Description of Role onn the team-->
-                    Throughout my time at the UCD UAV team, I have worked closely with both the aeromechanical and avionics 
-                    departments, ensuring clear communication happens between the two. In the beginning, I focused on simulations,
-                    particularly modelling our UAV in the software known as X-Plane 11. Later on I worked on integrating X-Plane to 
-                    mission planner in Ardupilot. I then worked on Finite Element Analysis (FEA) specifically for the landing gears 
-                    of the UAV. Finally, I developed and built the ground control station (GCS) which acted as the storage unit for 
-                    the UAV and also served as an operating station while preparing to fly, and during flight.  
+                    I joined the UCD Formula Student team at the beginning of the 2023/24 season, during my 1st year of engineering 
+                    at UCD, and became a member of the Powertrain Department. Although my background is in mechanical engineering, 
+                    I was eager to expand my knowledge and gain hands on experience in electrical systems, particularly in high-voltage. 
+                    This interdisciplinary approach also proved to be highly valuable for the team, as it strengthened communication and 
+                    collaboration between the mechanical and electrical departments during design phases.
+                    <br><br>
+                    As of rigth now, I am part of the High Voltage Subsystem team, specifically working on the Tractive System 
+                    Accumulator Control (TSAC). My responsibilities included:
+                    <br><br>
+                    Soldering circuit components using KiCAD to reference the location and component part.
+                    <br><br>
+                    Defining fusing requirements for each circuit based on expected current and analysis of the 
+                    potential fault scenarios from most likely to most extreme. Looking at research papers to validate 
+                    our calculations.
+                    <br><br>
+                    Researching potential fuses for our system and coordinating with our academic advisor to ensure we took 
+                    the right steps and always considering safety.
+                    <br><br>
+                    Contributing to the electrical safety documentation required by our college and academic supervisor, as well 
+                    as having it as a reference while building the TSAC.
+                    <br><br>
+                    Collaborating with mechanical teammates to ensure efficient cooling and layout inside the accumulator container 
+                    and on the chasis.
+                    <br><br>
+                    Assisting in CAD modelling of electrical assemblies and creating the new version of the TSAC to house the battery 
+                    cells. 
                   </p>
                 </div>
               </div>
@@ -110,32 +140,95 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/ucduav_assets/teampic.jpg"
+                      src="assets/fs_assets/finishedtsac.jpg"
                     />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END Roles Section -->
+          <!-- /END Roles Section -->
 
-    <!-- X-Plane Section -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
+          <!-- Challenges Section -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">X-Plane</h3>
+                <h3 class="project-wrapper__text-title">Challenges & Solutions</h3>
                 <div>
                   <p class="mb-4">
-                    <!--Description of Role onn the team-->
-                    The UCD UAV team was created in order to compete in the iMecheE UAS Challenge. The goal was to develop a 
-                    fully autonomous humanitarian aid drone capable of precise mission planning, payload delivery and 
-                    safe recovery while complying with the competition regulations. 
+                    <!--Description-->
+                    We faced a number of obstacles throughout the years:
+                    <br><br>
+                    <strong>Rule compliance:</strong>
+                    The FS rules for electrical systems are strict. We spent time ensuring all our design fit within the 
+                    regulations specified in the rulebook. 
+                    <br><br>
+                    <strong>Thermal buildup:</strong>Battery modules needed airflow paths and heat-resistant insulation. We used 
+                    epoxy coating on the inside of the TSAC to isolate each battery pack from each other. A passive cooling system 
+                    was used to channel cold air from side ducts into the TSAC to cool the batteries. Active cooling such as using 
+                    fans was also researched. 
+                    <br><br>
+                    <strong>Team handover:</strong>
+                    With many team members graduating and moving on from the team each year, documenting work for future members 
+                    became crucial. We had faced major problems especially with getting the motor resolver to communicate with the 
+                    controller because wires had been modified and cut by previous team members with no explanation as to why they 
+                    did it. 
+                    <br><br>
+                    <Strong>Battery Assembly Approval:</Strong> 
+                    One of our biggest challenges was getting permission to build and assemble our high voltage battery pack. For 
+                    two years, we worked closely with our academic supervisor for powertrain who represented the university. Despite 
+                    presenting detailed plans and iterating on multiple versions of our fusing and safety documentation, the college 
+                    ultimately did not deem it safe for us to construct the battery on campus.
+                    <br>
+                    As a result, we were forced to outsource the battery build externally. While this allowed us to meet deadlines, 
+                    it was disheartening after years of effort proving we could design, assemble, and operate the battery with 
+                    appropriate safety measures in place, including fuses and high voltage isolations, fault detection, and emergency 
+                    shutoffs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--Video-->
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                      <source src="assets/fs_assets/motor.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END CHALLENGES Section -->
+
+          <!-- Learning Outcome -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Learning Outcome</h3>
+                <div>
+                  <p class="mb-4">
+                    <!--Description-->
+                    Learning Outcomes:
+                    <br><br>
+                    Developed a strong understanding of high voltage system design and safety
+                    <br><br>
+                    Gained hands on experience with fuse theory, current protection and battery management systems.
+                    <br><br>
+                    Learned to communicate across disciplines, especially mechanical and electrical, ensuring smooth 
+                    progress for the team.
+                    <br><br>
+                    Sharpened skills in documentation, testing, and manufacturing.
+                    <br><br>
+                    Understood what it takes to bring a complex engineering system to life under real world deadlines and pressures
                   </p>
                 </div>
               </div>
@@ -151,35 +244,33 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
+                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                      <source src="assets/fs_assets/motor.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END Accomplishments/failures Section -->
+        <!-- End Learning Outcome Section-->
 
-    <!-- Result -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
+        <!-- RESULTS SECTION-->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">My Role on the Team</h3>
+                <h3 class="project-wrapper__text-title">Results</h3>
                 <div>
                   <p class="mb-4">
-                    <!--Description of Role onn the team-->
-                    The UCD UAV team was created in order to compete in the iMecheE UAS Challenge. The goal was to develop a 
-                    fully autonomous humanitarian aid drone capable of precise mission planning, payload delivery and 
-                    safe recovery while complying with the competition regulations. 
+                    <!--Description-->
+                   In the 2025 Formula Student UK competition at Silverstone, we finished 28th out of 59 teams. We were very proud 
+                   to have brought our car the closest it has ever been to actually racing as an EV for our team. This is a huge 
+                   milestone after years of effort and iteration.
+
+                  This season laid a solid foundation for 2026. With many of our major powertrain challenges now resolved, including 
+                  the battery assembly, circuit boards designed and manufactured, and a working powertrain, we're entering the next 
+                  competition year with more experience, a better tested system, and a clearer path forward. The team is now in a 
+                  strong position to climb the rankings and showcase the full potential of our engineering efforts, so stay tuned to 
+                  find out how we do. 
                   </p>
                 </div>
               </div>
@@ -195,20 +286,20 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
+                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
+                      <source src="assets/fs_assets/motor.mp4" type="video/mp4">
+                    </video>
                   </div>
                 </a>
               </div>
             </div>
           </div>
+          <!-- End Results Section -->
+ 
+
         </div>
       </div>
     </section>
-    <!-- End Result Section-->
 
     <!-- **** Contact Section **** -->
     <section id="contact">
