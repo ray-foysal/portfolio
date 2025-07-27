@@ -26,9 +26,9 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          <span class="text-color-main">UCD UAV Project</span>
+          <span class="text-color-main">Micromouse</span>
           <br />
-          Student led team in University College Dublin competing in the iMechE UAS Challenge 2025.
+          A challenge to create an autonomous maze solving robot for the ElecSoc Micromouse Competition, April 2024 at UCD.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -42,7 +42,7 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About the Team</h2>
+        <h2 class="section-title load-hidden">About the Challenge</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
@@ -51,7 +51,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="500px"
-                src="assets/ucduav_assets/teampic.jpg"
+                src="assets/micromouse_assets/mouse.jpeg"
                 alt="Profile Image"
               />
             </div>
@@ -60,18 +60,13 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                The UCD UAV team was established in early 2024 with the mission to compete in the iMechE UAS Challenge, 
-                an international competition focused on autonomous UAV systems for humanitarian aid. We were proud to be 
-                the first ever Irish team to compete in this competition that started in 2014. The team is made 
-                up of 10 engineering students from mechanical and electrical/electronic disciplines, supported by our 
-                academic advisor, Dr. Kevin Nolan.
-                Our team structure is divided into three key branches: Aeromechanical, Avionics, and Business/Social Media, 
-                allowing us to efficiently devevelop our UAV in all aspects with effective communication.
+                The Micromouse project was built for the ElecSoc Micromouse Competition held in April 2024.
+                In just a few weeks, our three-person team designed, built, and programmed a miniature robot that was meant to be 
+                capable of basic maze navigation.
               </p>
               <p class="about-wrapper__info-text">
-                I joined the team in February 2024 under the Aeromechanical branch. Since then, my role has spanned across 
-                design simulations, structural analysis, manufacturing, and system integration, contributing to both the 
-                technical development and hands-on assembly of the aircraft.
+                We took on the full stack challenge, developing the hardware, firmware, and software ourselves. The goal was to 
+                demo a functional robot that could sense walls, make decisions, and move accordingly within a maze environment.
               </p>
             </div>
           </div>
@@ -92,20 +87,17 @@
                 <div>
                   <p class="mb-4" style="text-align: justify;">
                     <!--Description of Role onn the team-->
-                    During my time on the UCD UAV team, I contributed across both the Aeromechanical and 
-                    Avionics branches, often acting as a bridge to ensure smooth communication and collaboration 
-                    between the two. My work began with flight simulation, where I developed a detailed model of 
-                    our UAV in X-Plane 11 to evaluate its aerodynamic behavior and performance. I later worked with 
-                    the rest of the Avionics team to integrate this simulation environment with Mission Planner using 
-                    ArduPilot, allowing us to test autonomous missions.
-                    
-                    As the project progressed, I conducted Finite Element Analysis (FEA) on critical structural components, 
-                    focusing particularly on the landing gear to ensure it could withstand real-world stresses during takeoff 
-                    and especially landing.
+                    <strong>Mechanical Design & Manufacturing:</strong> 
+                    I was responsible for designing and building the physical structure of the robot, including the 
+                    chassis and mounts for key components like the motors, sensors and battery.
 
-                    Towards the final stages, I led the development of our Ground Control Station (GCS). It was a custom-built, 
-                    portable unit that served as the command station for our UAV during pre flight checks and missions. It also 
-                    doubled as a secure storage solution for transporting the UAV and other electronics safely and easily .
+                    <strong>Motor Systems & Safety:</strong> 
+                    I worked directly with the drive motors and helped implement safety switches to protect the circuitry during 
+                    testing.
+
+                    <strong>Hands on Electronics Support:</strong> 
+                    While my main focus was mechanical, I also assisted with soldering components and helped bring the hardware 
+                    together during the integration stage.
                   </p>
                 </div>
               </div>
@@ -123,42 +115,30 @@
                 class="img-fluid rounded shadow-lg" 
                 width="100%" autoplay muted loop playsinline 
                 style="margin-top: 60px; margin-left: 30px;">
-                  <source src="assets/ucduav_assets/labwork.mp4" type="video/mp4">
+                  <source src="assets/micromouse_assets/motorspin.mp4" type="video/mp4">
                 </video>
               </div>
             </div>
           </div>
           <!-- /END Roles Section -->
 
-          <!-- X-Plane Section -->
+          <!-- Collaboration Section -->
           <div class="row">
             <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">X-Plane</h3>
+                <h3 class="project-wrapper__text-title">Collaboration & Algorithm</h3>
                 <div>
                   <p class="mb-4" style="text-align: justify;">
-                    <!--Description of Xplane-->
-                    I developed a fully functional flight simulation model of our UAV using X-Plane 11 and Plane Maker. 
-                    This allowed us to validate our design decisions, calculations and flight performance. 
-                    <br/>
-                    <br>
-                    <strong>Key contributions achieved:</strong>
-                    <br>
-                    Built several custom UAV prototypes in Plane Maker: I did this by replicating the geometry of the plane 
-                    based off CAD models, creating and sizing control surfaces, inputting propulsion system characteristics, 
-                    and mass properties based off calculations.<br>
-                    <br>
-                    Dynamics Validation: X-Plane was used to validate the plane's flying performance to verify 
-                    if the aerodynamic coefficients and control surfaces along with their deflections ensured that the UAV 
-                    was operable. I was able to modify the environmental settings by changing cross-wind on takeoff etc, to see 
-                    how the UAV would react. From these tests, we found out that the UAV was able to produce a lot of lift on 
-                    takeoff, therefore requiring a short takeoff distance, but it was also slightly statically unstable in roll, 
-                    meaning that the UAV failed to correct and return to level flight after being slightly distrubed in roll.<br>
-                    <br>
-                    I used X-Plane to simulate the effects of dropping our 2kg payload. I was able to conclude that while the UAV 
-                    became more maneuverable, there weren't any sudden effects as the centre of gravity (COG) of the payload was roughly 
-                    directly below the COG of the whole UAV, therefore the longitudinal location of the COG did not change when the 
-                    payload was dropped. The payload drop itself was modelled by a jettison water drop in X-Plane.<br>
+                    <!--Description-->
+                    We brainstormed a variety of maze-solving algorithms, including flood fill, hand-on-wall, and A*, 
+                    evaluating their feasibility for future iterations.
+                    <br><br>
+                    Throughout development, we used diagrams and schematics to collaborate on sensor layout, motor control, 
+                    and pathfinding logic. One software we used quite a lot during this project was Tinkercad, which was useful in 
+                    simulating the electrical components interacting together. 
+                    <br><br>
+                    Our teamwork across mechanical, electronic, and software roles was essential to getting a functional prototype 
+                    up and running on time.
                   </p>
                 </div>
               </div>
@@ -166,7 +146,7 @@
             <!--image-->
             <div class="col-lg-7 col-sm-12">
               <div class="project-wrapper__image load-hidden" style="margin-top: 120px;">
-                <a rel="noreferrer" href="assets/ucduav_assets/xplanehandbook.pdf" target="_blank">
+                <a rel="noreferrer" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -174,10 +154,12 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                  <!--video-->
-                    <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-                      <source src="assets/ucduav_assets/xplanedemo.mp4" type="video/mp4">
-                    </video>
+                  <!--image-->
+                    <img
+                      alt="FEA Image"
+                      class="img-fluid rounded shadow-lg"
+                      src="assets/micromouse_assets/micromouse_inside.jpg"
+                    />
                   </div>
                 </a>
               </div>
