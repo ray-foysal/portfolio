@@ -1,26 +1,29 @@
 {
-  "name": "simplefolio",
+  "name": "rayfoysal-portfolio",
   "version": "1.0.1",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "A personal portfolio website for Ray Foysal showcasing engineering projects and skills.",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+  "type": "git",
+  "url": "https://github.com/ray-foysal/portfolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Ray Foysal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cobiwave/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "https://ray-foysal.github.io/portfolio",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.8.2",
     "prettier": "^2.8.1"
   },
