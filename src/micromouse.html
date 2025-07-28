@@ -165,68 +165,30 @@
               </div>
             </div>
           </div>
-          <!-- /END Xplane Section -->
+          <!-- /END collaboration Section -->
 
-          <!-- FEA -->
+          <!-- Outcome Section -->
           <div class="row">
             <div class="col-lg-5 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">FEA</h3>
+                <h3 class="project-wrapper__text-title">The Outcome</h3>
                 <div>
                   <p class="mb-4" style="text-align: justify;">
                     <!--Description of FEA tests-->
-                    As part of the landing gear selection for our UAV, I conducted Finite Element Analysis (FEA) 
-                    simulations using SimScale to test how the landing gear we chose would respond under harsh landing 
-                    conditions. I also trialed two different carbon fibre settings; a generic carbon fibre vs 3k twill 
-                    carbon fibre which was the type used in our landing gear.<br>
-                    <br>
-                    The main objective was to find out if our landing gear could endure multiple impacts during real-world 
-                    operation without failure with a factor of safety. I simulated a variety of landing scenarios, including 
-                    ideal landings and impacts at angles, at different descent velocities.<br>
-                    <br>
-                    <strong>Key Simulation Scenarios and Results:</strong>
-                    <br>
-                    Vertical landings at -1 m/s, -3 m/s, and -4 m/s showed that the 3K twill carbon fibre consistently stayed 
-                    below its tensile failure limit (Max Von Mises ≈ 2.65 GPa < Material Max 3.45 GPa), while regular carbon 
-                    fibre remained within its lower strength limit (≈ 400 MPa < 650 MPa).<br>
-                    <br>
-                    In angled landings, such as a 10° backward tilt and 5° sideways tilt at -3 m/s, the results showed that 
-                    the regular carbon fibre was approaching its stress limit (≈ 618 MPa and 1.4 GPa), whereas the 3K twill 
-                    variant showed greater resilience.<br>
-                    <br>
-                    These simulations showed that 3k twill carbon fibre had a higher tolerance to stress concentrations 
-                    during impact, and that the landing gear that was tested would be suitable for our UAV.<br>
-                    <br>
-                    In order to ensure accurate results, I used a dynamic simulatin setup instead of the static tests that 
-                    could be performed in CAD such as Fusion 360. The dynamic simulations offered realistic impact velocities, 
-                    mesh refinement, and physical contact restraints between the ground and the landing gear wheels.<br>
-                    <br>
-                    I also implemented result control probes in SimScale to measure the max von Mises stress in regions that 
-                    were predicted to be under the most load and stress during the impact.
+                    Although the competition was unfortunately cancelled, we continued development independently. However, we 
+                    encountered a major hardware issue that also stopped our progress. The problem was that the Arduino motor 
+                    shield interfered with the sensor communication, preventing the sensor data from being sent back to the main 
+                    Arduino board.
+                    <br><br>
+                    Despite this, the project gave us valuable experience in hardware integration, rapid prototyping, and cross 
+                    functional collaboration. I gained hands on skills in mechanical design, motor system setup, and assembly, 
+                    which I have carried forward into many other projects.
                   </p>
                 </div>
               </div>
             </div>
-            <!-- Combined Image and Video Column -->
+            <!-- video -->
             <div class="col-lg-7 col-sm-12">
-              <div class="project-wrapper__image load-hidden" style="margin-bottom: 4rem;">
-                <a rel="noreferrer" href="assets/ucduav_assets/Dynamic Test Procedure.docx.pdf" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="FEA Image"
-                      class="img-fluid rounded shadow-lg"
-                      src="assets/ucduav_assets/fea.png"
-                    />
-                  </div>
-                </a>
-              </div>
-
               <div class="project-wrapper__image load-hidden">
                 <a rel="noreferrer" href="assets/ucduav_assets/feacfresults.pdf" target="_blank">
                   <div
@@ -237,164 +199,15 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-                      <source src="assets/ucduav_assets/feavid.mp4" type="video/mp4">
+                      <source src="assets/micromouse_assets/drift.mp4" type="video/mp4">
                     </video>
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- End FEA Section-->
+          <!-- End outcome Section-->
 
-          <!-- GCS Section -->
-          <div class="row">
-            <div class="col-lg-5 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">GCS/Transport Box</h3>
-                <div>
-                  <p class="mb-4" style="text-align: justify;">
-                    <!--Description of GCS/Trasnport Box-->
-                    The transport box, which also serves as the Ground Control Station (GCS), is a custom built 
-                    wooden structure designed to house the disassembled UAV, along with spare parts, repair tools, 
-                    batteries, and pre-flight checklists. It was engineered to fold up compactly and comply with the 
-                    strict maximum outer dimensions of 1.5 x 0.6 x 0.6 metres, as required by the UAS Challenge Competition.<br>
-                    <br>
-                    For ease of transport, the box features two handles on either end, enabling it to be carried by two people. 
-                    Alternatively, it can be pulled by a single person using two wheels mounted on the opposite side. <br>
-                    <br>
-                    One of the walls unfolds to form a pop-out desk, providing a stable workspace for laptops, tablets, 
-                    and telemetry equipment used to monitor the UAV's flight systems and execute checklists. A pull-out drawer 
-                    has also been integrated into the base of the box, allowing for organized storage of tools, components, 
-                    and other small essentials. <br>
-                    <br>
-                    The GCS is a crucial part of the UAV system that was designed not just for transport and protection, but also to 
-                    serve as a mobile operations hub during our missions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--Image/video-->
-            <div class="col-lg-6 col-sm-12">
-              <!-- Top image -->
-              <div class="project-wrapper__image load-hidden mb-4">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="GCS Render"
-                      class="img-fluid"
-                      src="assets/ucduav_assets/gcs2.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-
-              <!-- Bottom image -->
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="GCS Built"
-                      class="img-fluid"
-                      src="assets/ucduav_assets/gcs3.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END GCS Section --> 
-
-        </div>
-      </div>
-    </section>
-
-    <!-- **** Gallery Section **** -->
-    <section id="gallery">
-      <div class="container">
-        <h2 class="section-title">Photo Gallery</h2>
-        <div class="row">
-          <!-- Image 1 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery1.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1" />
-          </div>
-          <!-- Image 2 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery2.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2" />
-          </div>
-          <!-- Image 3 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery3.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
-          </div>
-          <!-- Image 4 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery4.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1" />
-          </div>
-          <!-- Video 5 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-              <source src="assets/ucduav_assets/gallery5.mp4" type="video/mp4">
-            </video>
-          </div>
-          <!-- Image 6 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery6.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
-          </div>
-          <!-- Image 7 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery7.jpg" class="img-fluid rounded shadow" alt="Gallery Image 1" />
-          </div>
-          <!-- Image 8 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery8.jpg" class="img-fluid rounded shadow" alt="Gallery Image 2" />
-          </div>
-          <!-- Video 9 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-              <source src="assets/ucduav_assets/gallery9.mp4" type="video/mp4">
-            </video>
-          </div>
-          <!-- Video 10 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-              <source src="assets/ucduav_assets/gallery10.mp4" type="video/mp4">
-            </video>
-          </div>
-          <!-- Image 11 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery11.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
-          </div>
-          <!-- Image 12 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery12.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
-          </div>
-          <!-- Image 13 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <img src="assets/ucduav_assets/gallery13.jpg" class="img-fluid rounded shadow" alt="Gallery Image 3" />
-          </div>
-          <!-- Video 14 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-              <source src="assets/ucduav_assets/gallery14.mp4" type="video/mp4">
-            </video>
-          </div>
-          <!-- Video 15 -->
-          <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <video class="img-fluid rounded shadow-lg" width="100%" autoplay muted loop playsinline>
-              <source src="assets/ucduav_assets/gallery15.mp4" type="video/mp4">
-            </video>
-          </div>
         </div>
       </div>
     </section>
